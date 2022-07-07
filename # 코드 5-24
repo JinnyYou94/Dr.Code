@@ -1,0 +1,6 @@
+# 코드 5-24
+
+import matplotlib.pyplot as plt
+plt.boxplot(데이터1)
+plt.boxplot(데이터2)
+plt.show()
