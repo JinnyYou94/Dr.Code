@@ -1,0 +1,16 @@
+# 코드 5-23
+
+# 최솟값을 출력한다.
+print(np.percentile(X, 0))
+
+# 1/4의 값을 출력한다.
+print(np.percentile(X, 25))
+
+# 2/4의 값을 출력한다.
+print(np.percentile(X, 50))
+
+# 3/4의 값을 출력한다.
+print(np.percentile(X, 75))
+
+# 최댓값을 출력한다.
+print(np.percentile(X, 100))
