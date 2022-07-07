@@ -1,0 +1,5 @@
+# 코드 11-3
+
+# 텐서플로우의 케라스를 임포트하고 cifar10 데이터를 훈련 세트와 테스트 세트로 가져온다.
+from tensorflow import keras
+(x_train, y_train), (x_test, y_test) = keras.datasets.cifar10.load_data()
