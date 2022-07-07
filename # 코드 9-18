@@ -1,0 +1,14 @@
+# 코드 9-18
+
+# 사이킷런의 SGDClassifier을 임포트한다.
+from sklearn.linear_model import SGDClassifier
+
+# SGDClassifier를 50 에포크 반복하는 것으로 SGD변수에 저장한다.
+SGD = SGDClassifier(max_iter = 50, random_state=42)
+
+# 경사하강법으로 모델을 훈련한다.
+SGD.fit(FtrainS,Ftraintarget)
+
+# 훈련 세트와 테스트 세트의 점수를 출력한다.
+print(SGD.score(FtrainS,Ftraintarget))
+print(SGD.score(FtestS,Ftesttarget))
