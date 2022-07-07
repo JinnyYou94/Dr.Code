@@ -1,0 +1,17 @@
+# 코드 3-1
+
+# 변수 a, b, c, d, e, f에 값을 저장한다.
+a = 1
+b = 1.0
+c = '1.000000000'
+d = 12346789012345678901
+e = 12345678901234567
+f = 12333 + 14j
+
+# a, b, c, d, e, f의 type을 출력한다.
+print (type(a))
+print (type(b))
+print (type(c))
+print (type(d))
+print (type(e))
+print (type(f))
