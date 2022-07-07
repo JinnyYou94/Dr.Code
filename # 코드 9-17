@@ -1,0 +1,21 @@
+# 코드 9-17
+
+import pandas as pd
+data = pd.read_csv('Iris.csv', encoding = 'cp949')
+
+from sklearn.preprocessing import LabelEncoder
+flower=data['Species']
+encoder = LabelEncoder()
+encoder.fit(flower)
+Ftarget = encoder.transform(flower)
+
+Fdata = data[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']].to_numpy()
+
+from sklearn.model_selection import train_test_split
+Ftrain, Ftest, Ftraintarget, Ftesttarget = train_test_split(Fdata, Ftarget, random_state=42)
+
+from sklearn.preprocessing import StandardScaler
+ss = StandardScaler()
+ss.fit(Ftrain)
+FtrainS = ss.transform(Ftrain)
+FtestS = ss.transform(Ftest)
