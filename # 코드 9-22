@@ -1,0 +1,4 @@
+# 코드 9-22
+
+import numpy as np
+print(np.mean(Vscore['test_score']))
