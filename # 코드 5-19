@@ -1,0 +1,5 @@
+# 코드 5-19
+
+plt.plot(X, Y1, color = 'royalblue', label = '2016년 월별 천연가스 생산량', marker = 'o')
+plt.plot(X, Y2, color = 'tomato', linestyle = 'dashed', 
+label = '2020년 월별 천연가스 생산량', marker = '*')
