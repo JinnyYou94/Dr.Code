@@ -1,0 +1,5 @@
+# 코드 5-10
+
+data2 = data.dropna()
+
+print(data2)
