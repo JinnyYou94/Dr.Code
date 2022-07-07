@@ -1,0 +1,14 @@
+# 코드 9-2
+
+# 판다스를 임포트하고, Iris 데이터를 불러와서 data객체에 저장한다.
+import pandas as pd
+data = pd.read_csv('Iris.csv', encoding = 'cp949')
+
+# target 데이터를 설정한다 : Iris-setosa 데이터 50개를 1로, 나머지 품종 데이터 100개를 0으로 넘파이 배열을 만든다.
+import numpy as np
+T1 = np.full(50,1)
+T2 = np.full(100,0)
+Ftarget = np.concatenate([T1, T2])
+
+# Ftarget을 출력한다.
+print(Ftarget)
