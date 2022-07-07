@@ -1,0 +1,7 @@
+# 코드 10-10
+
+# keras layers의 Dropout 클래스를 임포트한다.
+from keras.layers import Dropout
+
+# 드롭아웃을 적용할 dense층 바로 뒤에 다음 코드를 입력한다.
+model.add(Dropout(드롭아웃 할 뉴런비율))
