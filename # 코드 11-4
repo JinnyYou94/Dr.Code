@@ -1,0 +1,5 @@
+# 코드 11-4
+
+# 훈련 세트의 2번째 이미지를 확인한다.
+import matplotlib.pyplot as plt
+plt.imshow(x_train[1])
