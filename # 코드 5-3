@@ -1,0 +1,6 @@
+# 코드 5-3
+
+# 1월 인덱스의 열을 data_a에 저장한다.
+data_a = data['1월']
+
+data_a.head()
