@@ -1,0 +1,4 @@
+# 코드 7-17
+
+from sklearn.model_selection import train_test_split
+Btrain, Btest, Btraintarget, Btesttarget = train_test_split(Bdata, Btarget, random_state=42)
