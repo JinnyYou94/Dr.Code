@@ -1,0 +1,12 @@
+# 코드 3-15
+
+# start_value에서 end_value까지 짝수만 더해서 출력하는 함수 add를 정의한다.
+def add(start_value, end_value):
+	a = 0
+	for i in range (start_value,end_value+1):
+    if(i % 2 == 0):
+			a = a + i
+	print(a)
+
+# add 함수에 입력인자를 넣어본다.
+add(10,20)
