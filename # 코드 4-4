@@ -1,0 +1,17 @@
+# 코드 4-4
+
+# 넘파이를 임포트한다.
+import numpy as np
+
+# a와 b에 행렬을 저장한다. 
+a = [ [1 , 2], [3 , 4] ]
+b = [ [1 , 2], [3 , 4] ]
+
+# a와 b의 행렬 곱셈을 y1에 저장한다.
+y1 = np.matmul(a , b)
+
+# a와 b의 element-wise 곱셈을 y2에 저장한다.
+y2 = np.multiply(a , b)
+
+print(y1)
+print(y2)
