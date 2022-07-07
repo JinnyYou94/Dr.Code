@@ -1,0 +1,10 @@
+# 코드 8-22
+
+# 사이킷런의 Ridge 클래스를 임포트한다.
+from sklearn.linear_model import Ridge
+
+# Ridge 클래스의 객체 Rg를 생성하고 데이터를 넣어 훈련한다.
+Rg = Ridge()
+Rg.fit(data, target)
+
+print(Rg.score(data, target))
