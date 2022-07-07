@@ -1,0 +1,4 @@
+# 코드 7-15
+
+# data의 'MEDV'열을 가져와 넘파이 배열로 바꾸고 Btarget에 저장한다.
+Btarget=data['MEDV'].to_numpy()
