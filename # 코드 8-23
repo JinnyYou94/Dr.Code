@@ -1,0 +1,29 @@
+# 코드 8-23
+
+# 그래프를 그리기 위해 matplotlib의 pyplot을 임포트한다.
+import matplotlib.pyplot as plt
+
+# α 값에 따른 훈련 세트와 테스트 세트의 score를 저장할 리스트를 만든다.
+BtrainSMscore = []
+BtestSMscore = []
+
+# α 값 6개를 리스트로 저장한다.
+Ap = [0.1, 1, 10, 100, 1000, 10000]
+
+# 라쏘 모델의 α 값을 Ap에서 가져와서 훈련하고 score를 BtrainSMscore, BtestSMscore 리스트에 저장한다. 
+for i in Ap :
+from sklearn.linear_model import Lasso
+	Ls = Lasso(alpha = i)
+	Ls.fit(BtrainSM, Btraintarget)
+	BtrainSMscore.append(Ls.score(BtrainSM, Btraintarget))
+	BtestSMscore.append(Ls.score(BtestSM, Btesttarget))
+
+# 그래프를 그린다.
+import numpy as np
+
+plt.plot(np.log10(Ap), BtrainSMscore, label = 'train')
+plt.plot(np.log10(Ap), BtestSMscore, label = 'test')
+plt.xlabel('α')
+plt.ylabel('score')
+plt.legend()
+plt.show()
