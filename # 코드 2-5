@@ -1,0 +1,4 @@
+# 코드 2-5
+
+import sys
+sys.version
