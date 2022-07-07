@@ -1,0 +1,5 @@
+# 코드 2-8
+
+import pandas as pd
+
+data = pd.read_csv('파일명.csv', encoding = 'cp949')
