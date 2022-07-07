@@ -1,0 +1,21 @@
+# 코드 10-4
+
+# target 데이터 설정한다.
+Mtraintarget = traindata['label'].to_numpy()
+Mtesttarget = testdata['label'].to_numpy()
+
+# 입력 데이터를 설정한다.
+import numpy as np
+Mtrain = traindata.iloc[:,1:].to_numpy()
+Mtest = testdata.iloc[:,1:].to_numpy()
+
+# scale 맞추기
+from sklearn.preprocessing import StandardScaler
+ss = StandardScaler()
+ss.fit(Mtrain)
+MtrainS = ss.transform(Mtrain)
+MtestS = ss.transform(Mtest)
+
+# 훈련세트의 20프로를 검증세트로 떼어낸다.
+from sklearn.model_selection import train_test_split
+MtrainS, MtrainSV, MtrainStarget, MtrainSVtarget = train_test_split(MtrainS, Mtraintarget, test_size = 0.2, random_state = 42)
