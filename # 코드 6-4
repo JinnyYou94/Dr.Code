@@ -1,0 +1,13 @@
+# 코드 6-4
+
+# 넘파이를 임포트한다.
+import numpy as np
+
+# 크기가 12인 넘파이 배열을 a에 저장한다.
+a = np.arange(12)
+
+# reShape() 함수로 열(column)이 3인 배열로 바꾼다.
+a = a.reshape(-1,3)
+
+# a 배열의 Shape을 출력한다.
+print(a.shape)
