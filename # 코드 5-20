@@ -1,0 +1,5 @@
+# 코드 5-20
+
+import matplotlib.pyplot as plt
+plt.scatter([x축데이터], [y축데이터])
+plt.show()
