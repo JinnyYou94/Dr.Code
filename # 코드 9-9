@@ -1,0 +1,10 @@
+# 코드 9-9
+
+# 사이킷런의 LogisticRegression 클래스를 임포트한다.
+from sklearn.linear_model import LogisticRegression
+
+# LogisticRegerssion 클래스의 객체 Logistic을 생성하고 규제정도는 20, 반복횟수는 1000회로 설정한다.
+Logistic = LogisticRegression(C=20, max_iter=1000)
+
+# 입력 데이터와 target을 넣고 모델을 훈련한다.
+Logistic.fit(data, target)
