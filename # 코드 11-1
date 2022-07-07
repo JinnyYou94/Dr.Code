@@ -1,0 +1,10 @@
+# 코드 11-1
+
+# 텐서플로우의 keras를 임포트한다.
+from tensorflow import keras
+
+# model을 만든다.
+model = keras.Sequential()
+
+# MaxPooling 층을 만든다.
+model.add(keras.layers.MaxPooling2D(풀링크기))
