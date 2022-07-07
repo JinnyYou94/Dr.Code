@@ -1,0 +1,9 @@
+# 코드 9-14
+
+# 소숫점 계산을 위해 넘파이를 임포트한다.
+import numpy as np
+
+# 파이썬 싸이파이 라이브러리의 softmax() 함수를 이용하면 z 값을 softmax함수로 변환할 수 있다.
+from scipy.special import softmax
+proba = softmax(decisions, axis=1)
+print(np.round(proba, decimals=2))
