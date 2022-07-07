@@ -1,0 +1,7 @@
+# 코드 5-1
+
+# 판다스를 임포트한다.
+import pandas as pd
+
+# read_csv()함수로 데이터를 읽어 변수 data에 저장한다.
+data = pd.read_csv('파일명.csv', encoding = 'cp949')
