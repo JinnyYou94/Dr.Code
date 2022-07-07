@@ -1,0 +1,26 @@
+# 코드 8-11
+
+# CSV 파일 불러와서 data에 저장하기
+import pandas as pd
+data = pd.read_csv('HousingData.csv', encoding = 'cp949')
+
+# 누락값 처리하기
+data = data.interpolate()
+
+# target 데이터 설정하기
+Btarget=data['MEDV'].to_numpy()
+
+# 입력 데이터 설정하기
+Bdata =data['LSTAT'].to_numpy()
+Bdata = Bdata.reshape(-1,1)
+
+# 훈련 세트와 테스트 세트 나누기
+from sklearn.model_selection import train_test_split
+Btrain, Btest, Btraintarget, Btesttarget = train_test_split(Bdata, Btarget, random_state=42)
+
+# 특성 가공하여 만들어진 특성조합을 BtrainM과 BtestM에 저장하기
+from sklearn.preprocessing import PolynomialFeatures
+PolyN = PolynomialFeatures(degree=2, include_bias=False)
+PolyN.fit(Btrain)
+BtrainM = PolyN.transform(Btrain)
+BtestM = PolyN.transform(Btest)
