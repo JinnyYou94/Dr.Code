@@ -1,0 +1,9 @@
+# 코드 8-3
+
+from sklearn.linear_model import LinearRegression
+Linear = LinearRegression()
+
+Linear.fit(Btrain, Btraintarget)
+
+# 머신러닝 알고리즘이 찾은 기울기와 절편을 coef_와 intercept_속성을 이용해서 출력한다.
+print(Linear.coef_, Linear.intercept_)
