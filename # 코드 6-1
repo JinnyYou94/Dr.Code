@@ -1,0 +1,5 @@
+# 코드 6-1
+
+from sklearn.model_selection import train_test_split
+
+traindata, testdata, traindatatarget, testdatatarget = train_test_split(data, target, stratify = target, random_State = 42)
