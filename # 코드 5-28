@@ -1,0 +1,5 @@
+# 코드 5-28
+
+import matplotlib.pyplot as plt
+plt.bar([x축 값],[데이터])
+plt.show()
