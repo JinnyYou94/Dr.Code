@@ -1,0 +1,15 @@
+# 코드 6-3
+
+from sklearn.preprocessing import StandardScaler
+
+# StandardScaler 클래스의 객체를 생성한다.
+ss = StandardScaler()
+
+# 훈련세트로 객체를 훈련한다.
+ss.fit(traindata)
+
+# 훈련세트를 transform() 함수로 변환하여 trainS 매개변수에 넣는다.
+trainS = ss.transform(traindata)
+
+# 테스트세트를 transform() 함수로 변환하여 testS 매개변수에 넣는다.
+testS = ss.transform(testdata)
