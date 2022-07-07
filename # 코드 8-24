@@ -1,0 +1,6 @@
+# 코드 8-24
+
+from sklearn.linear_model import Lasso
+Ls = Lasso(alpha = 100)
+Ls.fit(BtrainSM, Btraintarget)
+Ls.score(BtrainSM, Btraintarget)
