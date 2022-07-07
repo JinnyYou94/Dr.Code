@@ -1,0 +1,12 @@
+# 코드 7-9
+
+from sklearn.neighbors import KNeighborsClassifier
+
+# KNeighborsClassifier 객체를 만든다.
+KNN = KNeighborsClassifier(n_neighbors = 10)
+
+# 훈련 세트로 모델을 훈련한다.
+KNN.fit(FtrainS, Ftraintarget)
+
+# 훈련 세트의 score를 출력한다.
+KNN.score(FtrainS, Ftraintarget)
