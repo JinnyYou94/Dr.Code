@@ -1,0 +1,5 @@
+# 코드 9-7
+
+# 파이썬 싸이파이 라이브러리의 expit() 함수를 이용하면 z 값을 시그모이드 함수 값으로 변환할 수 있다.
+from scipy.special import expit
+print(expit(decision))
