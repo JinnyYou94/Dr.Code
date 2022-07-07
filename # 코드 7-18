@@ -1,0 +1,8 @@
+# 코드 7-18
+
+from sklearn.preprocessing import StandardScaler
+ss = StandardScaler()
+
+ss.fit(Btrain)
+BtrainS = ss.transform(Btrain)
+BtestS = ss.transform(Btest)
