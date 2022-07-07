@@ -1,0 +1,5 @@
+# 코드 8-26
+
+import numpy as np
+
+Cost = (np.square(y – Y)).mean()
