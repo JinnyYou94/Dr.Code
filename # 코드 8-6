@@ -1,0 +1,9 @@
+# 코드 8-6
+
+import matplotlib.pyplot as plt
+
+# 학습에 사용된 훈련 세트로 산점도 그리기
+plt.scatter(Btrain, Btraintarget)
+plt.xlabel('LSTAT')
+plt.ylabel('MEDV')
+plt.show()
