@@ -1,0 +1,15 @@
+# 코드 4-10
+
+# 텐서플로우를 임포트한다.
+import tensorflow as tf
+
+# 변수 a에 행렬을 저장한다.
+a = tf.Variable([[0,2,4], [6,8,10]])
+
+# argmax 함수와 argmin 함수를 이용해 최댓값과 최솟값을 y1, y2에 저장한다.
+y1 = tf.argmax(a, 0)
+y2 = tf.argmin(a, 1)
+
+# y1, y2의 값을 출력한다.
+print (y1)
+print (y2)
