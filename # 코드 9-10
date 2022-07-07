@@ -1,0 +1,27 @@
+# 코드 9-10
+
+# 판다스를 임포트하고, Iris 데이터를 불러와서 data객체에 저장한다.
+import pandas as pd
+data = pd.read_csv('Iris.csv', encoding = 'cp949')
+
+# target 데이터를 설정한다.
+from sklearn.preprocessing import LabelEncoder
+flower=data['Species']
+encoder = LabelEncoder()
+encoder.fit(flower)
+Ftarget = encoder.transform(flower)
+
+# 입력 데이터를 설정한다.
+Fdata = data[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']].to_numpy()
+
+# 훈련 세트와 테스트 세트를 나눈다.
+from sklearn.model_selection import train_test_split
+Ftrain, Ftest, Ftraintarget, Ftesttarget = train_test_split(
+Fdata, Ftarget, random_state=42)
+
+# Scale을 맞춘다
+from sklearn.preprocessing import StandardScaler
+ss = StandardScaler()
+ss.fit(Ftrain)
+FtrainS = ss.transform(Ftrain)
+FtestS = ss.transform(Ftest)
