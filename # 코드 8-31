@@ -1,0 +1,3 @@
+# 코드 8-31
+
+print(SGD.score(BtestS, Btesttarget))
