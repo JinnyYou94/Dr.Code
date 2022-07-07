@@ -1,0 +1,5 @@
+# 코드 5-9
+
+data1 = data.fillna(0)
+
+print(data1)
