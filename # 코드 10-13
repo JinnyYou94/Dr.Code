@@ -1,0 +1,19 @@
+# 코드 10-13
+
+# fit() 함수의 결과를 history 변수에 저장한다.
+history = model.fit(MtrainS, MtrainStarget, epochs=20, 
+validation_data = (MtrainSV, MtrainSVtarget))
+
+# history 객체의 history에 저장된 loss(손실)를 리스트형식으로 가져온다.
+import matplotlib.pyplot as plt
+plt.plot(history.history['loss'], label = 'MtrainS')
+plt.plot(history.history['val_loss'], label = 'MtrainSV')
+plt.xlabel('epoch')
+plt.ylabel('loss')
+
+# x축 눈금을 설정한다.
+import numpy as np
+plt.xticks(np.arange(0,20))
+
+plt.legend()
+plt.show()
