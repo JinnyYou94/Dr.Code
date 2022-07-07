@@ -1,0 +1,8 @@
+# 코드 3-14
+
+# 두 개의 숫자 순서를 바꾸어주는 함수 switch를 정의한다.
+def switch(num1, num2):   
+	return (num2, num1)
+
+# 함수 switch에 (10, 20)를 넣은 값을 출력한다.
+print(switch(10, 20))
