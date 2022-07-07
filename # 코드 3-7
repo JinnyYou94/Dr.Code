@@ -1,0 +1,21 @@
+# 코드 3-7
+
+# 변수 a, b, c에 값을 저장한다.
+a = 1
+b = 2.0
+c = a + b
+
+# c를 출력한다.
+print ('adding value =', c)
+
+# a * b 연산을 c에 저장한다.
+c = a * b
+
+# c를 출력한다.
+print (' multiplying values = ', c)
+
+# a/b 값을 출력한다.
+print ('  dividing value = ', a/b )
+
+# a - b 값을 출력한다.
+print ('   subtracting values = ', a - b)
