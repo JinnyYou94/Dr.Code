@@ -1,0 +1,20 @@
+# 코드 10-1
+
+# 텐서플로우의 keras를 임포트한다.
+from tensorflow import keras
+
+# 층 dense를 설정한다.
+dense1 = keras.layers.Dense(출력할 뉴런 개수, activation='활성화 함수', input_shape=(입력 데이터 Shape))
+dense2 = keras.layers.Dense(출력할 뉴런 개수, activation='활성화 함수')
+
+# dense를 Sequential에 넣어 model 객체에 저장한다.
+model = keras.Sequential([dense1, dense2])
+
+# model 객체를 compile 한다.
+model.compile(loss='손실함수', metrics='accuracy')
+
+# 모델을 훈련한다.
+model.fit(훈련 데이터, 훈련 데이터 target, epochs=5)
+
+# 모델을 평가한다.
+model.evaluate(검증 데이터, 검증 데이터 target)
