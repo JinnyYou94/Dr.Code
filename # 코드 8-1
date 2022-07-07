@@ -1,0 +1,10 @@
+# 코드 8-1
+
+# 사이킷런의 LinearRegression 클래스를 임포트한다.
+from sklearn.linear_model import LinearRegression
+
+# LinearRegerssion 클래스의 객체 Linear를 생성한다.
+Linear = LinearRegression()
+
+# 입력 데이터와 target을 넣고 모델을 훈련한다.
+Linear.fit(data, target)
