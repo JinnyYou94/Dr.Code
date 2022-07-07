@@ -1,0 +1,3 @@
+# 코드 9-16
+
+Cost = (np.square(y-Y)).mean()
