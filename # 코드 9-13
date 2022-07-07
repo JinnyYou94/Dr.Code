@@ -1,0 +1,5 @@
+# 코드 9-13
+
+# decision_function() 함수로 나온 값이 train data의 z 값이다.
+decisions = Logistic.decision_function(FtrainS[:3])
+print(decisions)
