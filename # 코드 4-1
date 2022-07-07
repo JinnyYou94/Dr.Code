@@ -1,0 +1,18 @@
+# 코드 4-1
+
+# 텐서플로우를 임포트한다.
+import tensorflow as tf
+
+# 상수 a와 b에 행렬을 저장한다. 
+a = tf.constant([ [1 , 2], [2 , 3] ])
+b = tf.constant([ [1 , 2], [2 , 3] ])
+
+# add 함수로 a와 b 행렬을 더해서 add에 저장한다.
+add = tf.add(a , b)
+
+# subtract 함수로 a와 b 행렬을 빼서 sub에 저장한다.
+sub = tf.subtract(a , b)
+
+# add와 sub의 값을 출력한다.
+print(add)
+print(sub)
