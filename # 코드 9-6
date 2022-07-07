@@ -1,0 +1,5 @@
+# 코드 9-6
+
+# FtestS(앞에서 5개 데이터)의 z 값을 decision에 저장하고 출력한다.
+decision = Logistic.decision_function(FtestS[:5])
+print(decision)
