@@ -1,0 +1,8 @@
+# 코드 7-8
+
+from sklearn.preprocessing import StandardScaler
+ss = StandardScaler()
+
+ss.fit(Ftrain)
+FtrainS = ss.transform(Ftrain)
+FtestS = ss.transform(Ftest)
