@@ -1,0 +1,5 @@
+# 코드 9-19
+
+from sklearn.model_selection import train_test_split
+
+train, trainV, traintarget, trainVtarget = train_test_split(traindata, traintarget, test_size = 0.2, random_State = 42)
