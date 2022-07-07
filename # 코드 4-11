@@ -1,0 +1,15 @@
+# 코드 4-11
+
+# 텐서플로우를 임포트한다.
+import tensorflow as tf
+
+# 변수 a에 배열을 저장한다.
+a = tf.Variable([1,2,3,4])
+
+# reduce_sum 함수와 reduce_mean 함수를 이용해 원소들의 합과 평균값을 y1, y2에 저장한다.
+y1 = tf.reduce_sum(a,0)
+y2 = tf.reduce_mean(a,0)
+
+# y1, y2의 값을 출력한다.
+print (y1)
+print (y2)
