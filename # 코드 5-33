@@ -1,0 +1,5 @@
+# 코드 5-33
+
+import pandas as pd
+data = pd.read_csv('income.csv', encoding = 'cp949')
+data.head()
