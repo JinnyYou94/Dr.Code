@@ -1,0 +1,41 @@
+# 코드 8-19
+
+# CSV 파일 불러와서 data에 저장하기
+import pandas as pd
+data = pd.read_csv('HousingData.csv', encoding = 'cp949')
+
+# 누락값 처리하기
+data = data.interpolate()
+
+# target 데이터 설정하기
+Btarget=data['MEDV'].to_numpy()
+
+# 입력 데이터 설정하기
+LS = list(range(0,13))
+Bdata=data.iloc[:, LS].to_numpy()
+
+# 훈련 세트와 테스트 세트 나누기
+from sklearn.model_selection import train_test_split
+Btrain, Btest, Btraintarget, Btesttarget = train_test_split(Bdata, Btarget, random_state=42)
+
+# Scale 맞추기
+from sklearn.preprocessing import StandardScaler
+ss = StandardScaler()
+ss.fit(Btrain)
+BtrainS = ss.transform(Btrain)
+BtestS = ss.transform(Btest)
+
+# 특성 가공하여 만들어진 새로운 특성조합을 BtrainSM과 BtestSM에 저장하기
+from sklearn.preprocessing import PolynomialFeatures
+PolyN = PolynomialFeatures(degree=2, include_bias=False)
+PolyN.fit(Btrain)
+BtrainSM = PolyN.transform(Btrain)
+BtestSM = PolyN.transform(Btest)
+
+# Multiple Linear Regresison 훈련하기
+from sklearn.linear_model import LinearRegression
+Linear = LinearRegression()
+
+Linear.fit(BtrainSM, Btraintarget)
+
+print(Linear.coef_, Linear.intercept_)
