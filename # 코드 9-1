@@ -1,0 +1,10 @@
+# 코드 9-1
+
+# 사이킷런의 LogisticRegression 클래스를 임포트한다.
+from sklearn.linear_model import LogisticRegression
+
+# LogisticRegerssion 클래스의 객체 Logistic을 생성한다.
+Logistic = LogisticRegression()
+
+# 입력 데이터와 target을 넣고 모델을 훈련한다.
+Logistic.fit(data, target)
