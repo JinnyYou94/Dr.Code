@@ -2,11 +2,11 @@
 
 # startN에서 endN까지 짝수만 더해서 출력하는 함수 add를 정의한다.
 def add(startN, endN):
-	a = 0
-	for i in range (startN,endN+1):
-		if(i % 2 == 0):
-			a = a + i
-	print(a)
+    a = 0
+    for i in range (startN,endN+1):
+        if(i % 2 == 0):
+            a = a + i
+    print(a)
 
 # add 함수에 입력인자를 넣어본다.
 add(10,20)
