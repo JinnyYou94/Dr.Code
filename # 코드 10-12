@@ -4,7 +4,7 @@ from tensorflow import keras
 from keras.layers import Dropout
 
 model = keras.Sequential()
-model.add(keras.layers.Dense(50, activation = 'relu', input_shape = (784,)))
+model.add(keras.layers.Dense(50, activation='relu', input_shape=(784,)))
 model.add(keras.layers.Dense(30, activation='relu'))
 model.add(Dropout(0.2))
 model.add(keras.layers.Dense(30, activation='relu'))
