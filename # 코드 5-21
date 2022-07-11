@@ -1,6 +1,4 @@
 # 코드 5-21
 
-plt.scatter(X, Y1, color = 'royalblue', label = '2016년 월별 천연가스 생산량', 
-s = Y1/10000, alpha = 0.2)
-plt.scatter(X, Y2, color = 'tomato', linestyle = 'dashed', 
-label = '2020년 월별 천연가스 생산량', s = Y2/10000, alpha = 0.4)
+plt.scatter(X, Y1, color='royalblue', label='2016년 월별 천연가스 생산량', s=Y1/10000, alpha=0.2)
+plt.scatter(X, Y2, color='tomato', linestyle='dashed', label='2020년 월별 천연가스 생산량', s=Y2/10000, alpha=0.4)
