@@ -4,7 +4,7 @@
 import tensorflow as tf
 
 # 변수 a에 행렬을 저장한다.
-a = tf.Variable([[0,2,4],[6,8,10]])
+a = tf.Variable([[0,2,4], [6,8,10]])
 
 # reduce_sum 함수와 reduce_mean 함수를 이용해 원소들의 합과 평균값을 y1, y2에 저장한다.
 y1 = tf.reduce_sum(a,0)
