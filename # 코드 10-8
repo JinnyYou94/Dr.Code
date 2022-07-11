@@ -1,8 +1,8 @@
 # 코드 10-8
 
 import pandas as pd
-traindata = pd.read_csv('mnist_train.csv', encoding = 'cp949')
-testdata = pd.read_csv('mnist_test.csv', encoding = 'cp949')
+traindata = pd.read_csv('mnist_train.csv', encoding='cp949')
+testdata = pd.read_csv('mnist_test.csv', encoding='cp949')
 
 Mtraintarget = traindata['label'].to_numpy()
 Mtesttarget = testdata['label'].to_numpy()
@@ -18,11 +18,11 @@ MtrainS = ss.transform(Mtrain)
 MtestS = ss.transform(Mtest)
 
 from sklearn.model_selection import train_test_split
-MtrainS, MtrainSV, MtrainStarget, MtrainSVtarget = train_test_split(MtrainS, Mtraintarget, test_size = 0.2, random_state = 42)
+MtrainS, MtrainSV, MtrainStarget, MtrainSVtarget = train_test_split(MtrainS, Mtraintarget, test_size=0.2, random_state=42)
 
 from tensorflow import keras
 model = keras.Sequential()
-model.add(keras.layers.Dense(50, activation = 'relu', input_shape = (784,)))
+model.add(keras.layers.Dense(50, activation='relu', input_shape=(784,)))
 model.add(keras.layers.Dense(30, activation='relu'))
 model.add(keras.layers.Dense(30, activation='relu'))
 model.add(keras.layers.Dense(10, activation='softmax'))
