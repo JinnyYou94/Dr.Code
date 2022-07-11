@@ -3,10 +3,10 @@
 from sklearn.neighbors import KNeighborsRegressor
 
 # KNeighborsClassifier 객체를 만든다.
-KNN = KNeighborsRegressor (n_neighbors = 10)
+KNN = KNeighborsRegressor(n_neighbors=10)
 
 # 훈련 세트로 모델을 훈련한다.
-KNN.fit(BtrainS, Btraintarget)
+KNN.fit(BtrainS,Btraintarget)
 
 # 훈련 세트의 score를 출력한다.
-print(KNN.score(BtrainS, Btraintarget))
+print(KNN.score(BtrainS,Btraintarget))
