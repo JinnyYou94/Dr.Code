@@ -8,7 +8,7 @@ dense1 = keras.layers.Dense(출력할 뉴런 개수, activation='활성화 함�
 dense2 = keras.layers.Dense(출력할 뉴런 개수, activation='활성화 함수')
 
 # dense를 Sequential에 넣어 model 객체에 저장한다.
-model = keras.Sequential([dense1, dense2])
+model = keras.Sequential([dense1,dense2])
 
 # model 객체를 compile 한다.
 model.compile(loss='손실함수', metrics='accuracy')
