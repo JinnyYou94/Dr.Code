@@ -1,5 +1,5 @@
 # 코드 9-21
 
 from sklearn.model_selection import cross_validate
-Vscore = cross_validate(SGD, FtrainS, Ftraintarget, cv = 3)
+Vscore = cross_validate(SGD, FtrainS, Ftraintarget, cv=3)
 print(Vscore)
