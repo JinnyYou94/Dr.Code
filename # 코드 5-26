@@ -1,5 +1,5 @@
 # 코드 5-26
 
 import matplotlib.pyplot as plt
-plt.boxplot([데이터1, 데이터2])
+plt.boxplot([데이터1,데이터2])
 plt.show()
