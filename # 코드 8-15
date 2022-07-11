@@ -8,7 +8,7 @@ plt.xlabel('LSTAT')
 plt.ylabel('MEDV')
 
 # X축 범위를 0부터 40까지로하는 2차 방정식 그리기
-# 0부터 40까지의 넘파이 배열을 만들고, 2차원 배열로 reShape 한 후 X에 저장한다.
+# 0부터 40까지의 넘파이 배열을 만들고, 2차원 배열로 Reshape 한 후 X에 저장한다.
 import numpy as np
 X = np.arange(0, 41).reshape(-1, 1)
 
@@ -20,6 +20,6 @@ XM = PolyN.fit_transform(X)
 # 앞에서 학습한 Linear Regression 모델(Linear)에 predict 함수로 XM의 target 값을 구해서 Y에 저장한다. 
 Y = Linear.predict(XM)
 
-plt.plot(X, Y, c= 'red')
+plt.plot(X, Y, c='red')
 
 plt.show()
