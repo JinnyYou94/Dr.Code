@@ -9,4 +9,4 @@ KNN = KNeighborsClassifier(n_neighbors = 10)
 KNN.fit(FtrainS, Ftraintarget)
 
 # 훈련 세트의 score를 출력한다.
-KNN.score(FtrainS, Ftraintarget)
+print(KNN.score(FtrainS, Ftraintarget))
