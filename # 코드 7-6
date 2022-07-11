@@ -1,4 +1,4 @@
 # 코드 7-6
 
 # data에서 4가지 열(column)을 넘파이배열로 변환 후 fdata에 저장한다.
-Fdata=data[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']].to_numpy()
+Fdata = data[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']].to_numpy()
