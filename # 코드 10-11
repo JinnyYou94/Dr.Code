@@ -3,7 +3,7 @@
 from tensorflow import keras
 
 model = keras.Sequential()
-model.add(keras.layers.Dense(50, activation = 'relu', input_shape = (784,)))
+model.add(keras.layers.Dense(50, activation='relu', input_shape=(784,)))
 model.add(keras.layers.Dense(30, activation='relu'))
 model.add(keras.layers.Dense(30, activation='relu'))
 model.add(keras.layers.Dense(10, activation='softmax'))
