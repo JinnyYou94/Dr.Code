@@ -2,5 +2,5 @@
 
 from sklearn.linear_model import LogisticRegression
 Logistic = LogisticRegression()
-Logistic.fit(FtrainS,Ftraintarget)
-print(Logistic.score(FtrainS,Ftraintarget))
+Logistic.fit(FtrainS, Ftraintarget)
+print(Logistic.score(FtrainS, Ftraintarget))
