@@ -4,7 +4,7 @@
 from sklearn.preprocessing import LabelEncoder
 
 # data의 'Species'열을 flower 객체에 저장한다.
-flower=data['Species']
+flower = data['Species']
 
 # LabelEncoder 객체를 만들어 fit, transform을 한 값을 Ftarget에 저장한다.
 encoder = LabelEncoder()
