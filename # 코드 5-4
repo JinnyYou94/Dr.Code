@@ -1,5 +1,5 @@
 # 코드 5-4
 
-data_b = data[['1월', '6월', '12월']]
+data_b = data[['1월','6월','12월']]
 
 print(data_b.head())
