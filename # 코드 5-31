@@ -4,6 +4,7 @@ import pandas as pd
 data = pd.read_csv('gas.csv', encoding = 'cp949')
 
 import matplotlib.pyplot as plt
+plt.rc('font', family = 'Malgun Gothic')
 
 # 데이터의 2월 열을 넘파이로 변환 후 X에 저장한다.
 X = data['2월'].to_numpy()
