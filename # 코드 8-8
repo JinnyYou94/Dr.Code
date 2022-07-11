@@ -1,3 +1,3 @@
 # 코드 8-8
 
-Btrain.min()
+print(Btrain.min())
