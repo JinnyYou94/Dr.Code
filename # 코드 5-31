@@ -1,10 +1,10 @@
 # 코드 5-31
 
 import pandas as pd
-data = pd.read_csv('gas.csv', encoding = 'cp949')
+data = pd.read_csv('gas.csv', encoding='cp949')
 
 import matplotlib.pyplot as plt
-plt.rc('font', family = 'Malgun Gothic')
+plt.rc('font', family='Malgun Gothic')
 
 # 데이터의 2월 열을 넘파이로 변환 후 X에 저장한다.
 X = data['2월'].to_numpy()
@@ -17,11 +17,10 @@ C = ['cornsilk', 'pink', 'lavenderblush', 'lightgrey', 'peachpuff', 'lightsteelb
 
 # 파이의 돌출 정도를 모두 동일하게 0.02로 설정한다.
 import numpy as np
-E = np.full(6, 0.02)
+E = np.full(6,0.02)
 
 # 파이차트를 그린다.
-plt.pie(X, labels = Y, colors = C, autopct = '%.1f%%', 
-explode = E, counterclock = False)
+plt.pie(X, labels=Y, colors=C, autopct='%.1f%%', explode=E, counterclock=False)
 
 plt.title('2016년도 월별 천연가스 생산량')
 plt.show()
