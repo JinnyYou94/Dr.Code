@@ -1,7 +1,7 @@
 # 코드 5-16
 
-# 그래프의 y축 눈금정보를 가져와서 TickF에 저장한다.
-TickF = plt.gca().get_yticks()
+# 그래프의 y축 눈금정보를 가져와서 TickY에 저장한다.
+TickY = plt.gca().get_yticks()
 
 # format 함수를 통해서 y축 눈금 라벨을 설정한다.
-plt.gca().set_yticklabels(['{:.0f}'.format(a) for a in TickF])
+plt.gca().set_yticklabels(['{:.0f}'.format(a) for a in TickY])
