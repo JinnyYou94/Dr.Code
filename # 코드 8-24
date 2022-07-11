@@ -3,4 +3,4 @@
 from sklearn.linear_model import Lasso
 Ls = Lasso(alpha = 100)
 Ls.fit(BtrainSM, Btraintarget)
-Ls.score(BtrainSM, Btraintarget)
+print(Ls.score(BtrainSM, Btraintarget))
