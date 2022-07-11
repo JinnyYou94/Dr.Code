@@ -13,16 +13,16 @@ Ap = [0.1, 1, 10, 100, 1000, 10000]
 # 라쏘 모델의 α 값을 Ap에서 가져와서 훈련하고 score를 BtrainSMscore, BtestSMscore 리스트에 저장한다. 
 for i in Ap :
 from sklearn.linear_model import Lasso
-	Ls = Lasso(alpha = i)
-	Ls.fit(BtrainSM, Btraintarget)
-	BtrainSMscore.append(Ls.score(BtrainSM, Btraintarget))
-	BtestSMscore.append(Ls.score(BtestSM, Btesttarget))
+    Ls = Lasso(alpha=i)
+    Ls.fit(BtrainSM, Btraintarget)
+    BtrainSMscore.append(Ls.score(BtrainSM, Btraintarget))
+    BtestSMscore.append(Ls.score(BtestSM, Btesttarget))
 
 # 그래프를 그린다.
 import numpy as np
 
-plt.plot(np.log10(Ap), BtrainSMscore, label = 'train')
-plt.plot(np.log10(Ap), BtestSMscore, label = 'test')
+plt.plot(np.log10(Ap), BtrainSMscore, label='train')
+plt.plot(np.log10(Ap), BtestSMscore, label='test')
 plt.xlabel('α')
 plt.ylabel('score')
 plt.legend()
