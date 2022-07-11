@@ -2,7 +2,7 @@
 
 # CSV 파일 불러와서 data에 저장하기
 import pandas as pd
-data = pd.read_csv('HousingData.csv', encoding = 'cp949')
+data = pd.read_csv('HousingData.csv', encoding='cp949')
 
 # 누락값 처리하기
 data = data.interpolate()
