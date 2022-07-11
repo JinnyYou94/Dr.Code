@@ -2,11 +2,11 @@
 
 # 판다스를 임포트하고, Iris 데이터를 불러와서 data객체에 저장한다.
 import pandas as pd
-data = pd.read_csv('Iris.csv', encoding = 'cp949')
+data = pd.read_csv('Iris.csv', encoding='cp949')
 
 # target 데이터를 설정한다.
 from sklearn.preprocessing import LabelEncoder
-flower=data['Species']
+flower = data['Species']
 encoder = LabelEncoder()
 encoder.fit(flower)
 Ftarget = encoder.transform(flower)
