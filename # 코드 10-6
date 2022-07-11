@@ -4,7 +4,7 @@ from tensorflow import keras
 
 # Sequential model에 Dense 층을 추가한다.
 model = keras.Sequential()
-model.add(keras.layers.Dense(50, activation = 'sigmoid', input_shape = (784,)))
+model.add(keras.layers.Dense(50, activation='sigmoid', input_shape=(784,)))
 model.add(keras.layers.Dense(30, activation='sigmoid'))
 model.add(keras.layers.Dense(30, activation='sigmoid'))
 model.add(keras.layers.Dense(10, activation='softmax'))
