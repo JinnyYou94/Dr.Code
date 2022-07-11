@@ -11,4 +11,4 @@ b = tf.Variable([0,1,2,3])
 add = tf.add(a,b)
 
 # add 값을 출력한다.
-print (add)
+print(add)
