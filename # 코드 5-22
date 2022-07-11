@@ -1,10 +1,10 @@
 # 코드 5-22
 
 import pandas as pd
-data = pd.read_csv('gas.csv', encoding = 'cp949')
+data = pd.read_csv('gas.csv', encoding='cp949')
 
 import matplotlib.pyplot as plt
-plt.rc('font', family = 'Malgun Gothic')
+plt.rc('font', family='Malgun Gothic')
 
 import numpy as np
 
