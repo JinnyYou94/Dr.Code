@@ -2,8 +2,8 @@
 
 # 입력값(inputN)에 1을 더해서 outputN로 반환하는 Plus 함수를 정의한다.
 def Plus(inputN):
-	outputN = inputN + 1
-	return outputN
+    outputN = inputN + 1
+    return outputN
 
 # 입력값 inputN은 input() 함수로 사용자에게 입력받은 문자이다.
 inputN = input('원하는 숫자를 넣으세요 : ')
