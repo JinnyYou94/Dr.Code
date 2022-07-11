@@ -2,7 +2,7 @@
 
 # CSV 파일 불러와서 data에 저장하기
 import pandas as pd
-data = pd.read_csv('HousingData.csv', encoding = 'cp949')
+data = pd.read_csv('HousingData.csv', encoding='cp949')
 
 # 누락값 처리하기
 data = data.interpolate()
@@ -11,7 +11,7 @@ data = data.interpolate()
 Btarget=data['MEDV'].to_numpy()
 
 # 입력 데이터 설정하기
-LS = list(range(0,13))
+LS = list(range(0, 13))
 Bdata=data.iloc[:, LS].to_numpy()
 
 # 훈련 세트와 테스트 세트 나누기
