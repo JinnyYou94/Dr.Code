@@ -2,4 +2,4 @@
 
 import numpy as np
 
-Cost = (np.square(y – Y)).mean()
+Cost = (np.square(y–Y)).mean()
