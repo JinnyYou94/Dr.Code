@@ -4,6 +4,8 @@ import pandas as pd
 data = pd.read_csv('gas.csv', encoding = 'cp949')
 
 import matplotlib.pyplot as plt
+plt.rc('font', family = 'Malgun Gothic')
+
 import numpy as np
 
 # 2월과 8월 열의 데이터를 넘파이로 변환하고 X, Y에 저장한다.
@@ -15,8 +17,8 @@ plt.boxplot(X)
 plt.boxplot(Y)
 
 # y축 눈금 단위를 지수단위가 아닌 float로 변경한다.
-TickF = plt.gca().get_yticks()
-plt.gca().set_yticklabels(['{:.0f}'.format(a) for a in TickF])
+TickY = plt.gca().get_yticks()
+plt.gca().set_yticklabels(['{:.0f}'.format(a) for a in TickY])
 
 plt.title('2월과 8월의 천연가스 생산량')
 plt.show()
