@@ -1,3 +1,3 @@
 # 코드 8-20
 
-Linear.score(BtrainSM, Btraintarget)
+print(Linear.score(BtrainSM, Btraintarget))
