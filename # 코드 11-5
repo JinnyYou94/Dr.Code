@@ -2,12 +2,12 @@
 
 # Scale 맞춘다.
 import numpy as np
-x_mean = np.mean(x_train, axis = (0, 1, 2))
-x_std = np.std(x_train, axis = (0, 1, 2))
+x_mean = np.mean(x_train, axis=(0,1,2))
+x_std = np.std(x_train, axis=(0,1,2))
 
-CtrainS = (x_train - x_mean) / x_std
-CtestS = (x_test - x_mean) / x_std
+CtrainS = (x_train-x_mean)/x_std
+CtestS = (x_test-x_mean)/x_std
 
 # 훈련 세트의 20프로를 검증 세트로 떼어낸다.
 from sklearn.model_selection import train_test_split
-CtrainS, CtrainSV, CtrainStarget, CtrainSVtarget = train_test_split(CtrainS, y_train, test_size = 0.2, random_state = 42)
+CtrainS, CtrainSV, CtrainStarget, CtrainSVtarget = train_test_split(CtrainS, y_train, test_size=0.2, random_state=42)
