@@ -5,4 +5,4 @@ import pandas as pd
 data = pd.read_csv('Iris.csv', encoding = 'cp949')
 
 # data의 앞 5행을 출력합니다.
-data.head()
+print(data.head())
