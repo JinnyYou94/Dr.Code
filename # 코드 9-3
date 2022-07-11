@@ -1,7 +1,7 @@
 # 코드 9-3
 
 # 입력 데이터를 설정한다.
-Fdata = data[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm',   'PetalWidthCm']].to_numpy()
+Fdata = data[['SepalLengthCm', 'SepalWidthCm', 'PetalLengthCm', 'PetalWidthCm']].to_numpy()
 
 # 훈련 세트와 테스트 세트를 나눈다.
 from sklearn.model_selection import train_test_split
