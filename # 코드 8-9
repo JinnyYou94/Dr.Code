@@ -8,5 +8,5 @@ plt.xlabel('LSTAT')
 plt.ylabel('MEDV')
 
 # X축 범위를 0부터 40까지로하는 1차 방정식 그리기
-plt.plot([0,41], [0*Linear.coef_ + Linear.intercept_, 41*Linear.coef_ + Linear.intercept_], color = 'red')
+plt.plot([0,41], [0*Linear.coef_+Linear.intercept_, 41*Linear.coef_+Linear.intercept_], color='red')
 plt.show()
