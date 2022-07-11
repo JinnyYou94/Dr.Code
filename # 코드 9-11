@@ -4,4 +4,4 @@ from sklearn.linear_model import LogisticRegression
 Logistic = LogisticRegression(C=20, max_iter=1000)
 Logistic.fit(FtrainS,Ftraintarget)
 
-Logistic.score(FtrainS,Ftraintarget)
+print(Logistic.score(FtrainS,Ftraintarget))
