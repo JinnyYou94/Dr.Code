@@ -2,4 +2,4 @@
 
 data_b = data[['1월', '6월', '12월']]
 
-data_b.head()
+print(data_b.head())
