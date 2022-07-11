@@ -4,7 +4,7 @@
 from sklearn.neighbors import KNeighborsClassifier
 
 # KNeighborsClassifier 객체를 만든다.
-KNN = KNeighborsClassifier(n_neighbors = 10)
+KNN = KNeighborsClassifier(n_neighbors=10)
 
 # 데이터를 훈련시킨다.
-KNN.fit(data, target)
+KNN.fit(data,target)
