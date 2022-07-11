@@ -4,7 +4,7 @@
 import matplotlib.pyplot as plt
 
 # x축과 y축 값을 입력한다.
-plt.plot([1, 2, 3, 4], [10, 30, 20, 50])
+plt.plot([1,2,3,4],[10,30,20,50])
 
 # 그래프를 보여준다.
 plt.show()
