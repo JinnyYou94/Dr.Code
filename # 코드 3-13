@@ -1,17 +1,17 @@
 # 코드 3-13
 
 # 1부터 사용자에게 입력받은 값까지 더해주는 함수 add를 정의한다.
-def add(input_num):
+def add(inputN):
     a = 0
-    for i in range (1, input_num+1):
+    for i in range (1, inputN+1):
         a = a + i
     return a
 
-# 입력값 input_num는 input() 함수로 사용자의 입력을 받은 문자이다.
-input_num = input('원하는 숫자를 넣으세요 : ')
+# 입력값 inputN는 input() 함수로 사용자의 입력을 받은 문자이다.
+inputN = input('원하는 숫자를 넣으세요 : ')
 
 # 입력받은 값은 문자이므로 int 형변환을 통해 숫자로 바꾸어준다.
-input_num = int(input_num)
+inputN = int(inputN)
 
-# input_num를 넣어 Plus 함수를 실행하고 그 결과를 출력한다.
-print(add(input_num))
+# inputN를 넣어 Plus 함수를 실행하고 그 결과를 출력한다.
+print(add(inputN))
