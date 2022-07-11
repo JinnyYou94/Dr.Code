@@ -1,14 +1,14 @@
 # 코드 5-34
 
 import matplotlib.pyplot as plt
-plt.rc('font', family = 'Malgun Gothic')
+plt.rc('font', family='Malgun Gothic')
 
 # data에서 '평균소득월액' 열을 넘파이로 변환한 후 X에 저장한다.
 import numpy as np
 X = data['평균소득월액'].to_numpy()
 
 # 간격을 100으로 하는 히스토그램을 그린다.
-plt.hist(X, bins=100, color = 'red')
+plt.hist(X, bins=100, color='red')
 
 # x축 눈금 단위를 지수단위가 아닌 float로 변경한다.
 TickX = plt.gca().get_xticks()
