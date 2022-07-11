@@ -3,6 +3,6 @@
 from sklearn.linear_model import LinearRegression
 Linear = LinearRegression()
 
-Linear.fit(BtrainM, Btraintarget)
+Linear.fit(BtrainM,Btraintarget)
 
-print(Linear.coef_, Linear.intercept_)
+print(Linear.coef_,Linear.intercept_)
