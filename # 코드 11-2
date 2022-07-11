@@ -7,4 +7,4 @@ from tensorflow import keras
 model = keras.Sequential()
 
 # CNN 층을 만든다.
-model.add(keras.layers.Conv2D(필터 개수, kernel_size= 필터 사이즈, activation='활성화 함수', padding = 'same', stride = '원하는 stride 값'))
+model.add(keras.layers.Conv2D(필터 개수, kernel_size=필터 사이즈, activation='활성화 함수', padding='same', stride='원하는 stride 값'))
