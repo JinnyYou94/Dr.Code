@@ -9,9 +9,9 @@ e = 12345678901234567
 f = 12333 + 14j
 
 # a, b, c, d, e, f의 type을 출력한다.
-print (type(a))
-print (type(b))
-print (type(c))
-print (type(d))
-print (type(e))
-print (type(f))
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
