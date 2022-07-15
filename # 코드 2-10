@@ -1,4 +1,4 @@
 # 코드 2-10
 
 import matplotlib.pyplot as plt
-plt.rc('font', family='NanumBarunGothic')
+plt.rc('font', family = 'NanumBarunGothic')
