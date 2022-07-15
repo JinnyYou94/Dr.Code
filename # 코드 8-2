@@ -2,7 +2,7 @@
 
 # CSV 파일 불러와서 data에 저장하기
 import pandas as pd
-data = pd.read_csv('HousingData.csv', encoding='cp949')
+data = pd.read_csv('HousingData.csv', encoding = 'cp949')
 
 # 누락값 처리하기
 data = data.interpolate()
@@ -16,4 +16,4 @@ Bdata = Bdata.reshape(-1, 1)
 
 # 훈련 세트와 테스트 세트 나누기
 from sklearn.model_selection import train_test_split
-Btrain, Btest, Btraintarget, Btesttarget = train_test_split(Bdata, Btarget, random_state=42)
+Btrain, Btest, Btraintarget, Btesttarget = train_test_split(Bdata, Btarget, random_state = 42)
