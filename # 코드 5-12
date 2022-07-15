@@ -1,7 +1,7 @@
 # 코드 5-12
 
 import pandas as pd
-data = pd.read_csv('gas.csv', encoding='cp949')
+data = pd.read_csv('gas.csv', encoding = 'cp949')
 
 # to_numpy 함수를 이용해서 1월, 6월, 12월 열(column)을 넘파이 배열로 바꾼다.
 data1 = data[['1월', '6월', '12월']].to_numpy()
