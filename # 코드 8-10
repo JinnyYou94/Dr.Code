@@ -4,7 +4,7 @@
 from sklearn.preprocessing import PolynomialFeatures
 
 # PolynomialFeatures 클래스의 객체 PolyN을 생성한다.
-PolyN = PolynomialFeatures(degree=2, include_bias=False)
+PolyN = PolynomialFeatures(degree = 2, include_bias = False)
 
 # PolyN에 특성을 넣고 fit, transform 함수로 특성조합을 만든다.
 PolyN.fit([특성])
