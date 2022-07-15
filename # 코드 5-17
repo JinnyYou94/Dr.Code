@@ -5,13 +5,13 @@ data = pd.read_csv('gas.csv', encoding = 'cp949')
 
 # matplotlib을 임포트한다.
 import matplotlib.pyplot as plt
-plt.rc('font', family='Malgun Gothic')
+plt.rc('font', family = 'Malgun Gothic')
 
 # 넘파이를 임포트한다.
 import numpy as np
 
 # X축 값으로 1부터 12까지의 넘파이배열을 만들고 저장한다.
-X = np.arange(1,13)
+X = np.arange(1, 13)
 
 # 2016년 1월부터 12월까지의 천연가스 생산량을 Y1에 저장한다.
 Y1 = data.loc[0, '1월':'12월'].to_numpy()
@@ -20,8 +20,8 @@ Y1 = data.loc[0, '1월':'12월'].to_numpy()
 Y2 = data.loc[4, '1월':'12월'].to_numpy()
 
 # 2016년 그래프와 2020년 그래프를 그린다.
-plt.plot(X, Y1, color='royalblue', label='2016년 월별 천연가스 생산량')
-plt.plot(X, Y2, color='tomato', linestyle='dashed', label='2020년 월별 천연가스 생산량')
+plt.plot(X, Y1, color = 'royalblue', label = '2016년 월별 천연가스 생산량')
+plt.plot(X, Y2, color = 'tomato', linestyle = 'dashed', label = '2020년 월별 천연가스 생산량')
 
 # X를 x축 눈금값으로 설정한다.
 plt.xticks(X)
