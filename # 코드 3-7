@@ -6,16 +6,16 @@ b = 2.0
 c = a + b
 
 # c를 출력한다.
-print ('adding value =', c)
+print('adding value =', c)
 
 # a * b 연산을 c에 저장한다.
 c = a * b
 
 # c를 출력한다.
-print (' multiplying values = ', c)
+print(' multiplying values = ', c)
 
 # a/b 값을 출력한다.
-print ('  dividing value = ', a/b )
+print('  dividing value = ', a/b )
 
 # a - b 값을 출력한다.
-print ('   subtracting values = ', a - b)
+print('   subtracting values = ', a - b)
