@@ -3,7 +3,7 @@
 # 1부터 사용자에게 입력받은 값까지 더해주는 함수 add를 정의한다.
 def add(inputN):
     a = 0
-    for i in range (1,inputN+1):
+    for i in range (1, inputN+1):
          a = a + i
     return a
 
