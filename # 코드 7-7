@@ -1,4 +1,4 @@
 # 코드 7-7
 
 from sklearn.model_selection import train_test_split
-Ftrain, Ftest, Ftraintarget, Ftesttarget = train_test_split(Fdata, Ftarget, random_state=42)
+Ftrain, Ftest, Ftraintarget, Ftesttarget = train_test_split(Fdata, Ftarget, random_state = 42)
