@@ -1,17 +1,17 @@
 # 코드 5-29
 
 import pandas as pd
-data = pd.read_csv('gas.csv', encoding='cp949')
+data = pd.read_csv('gas.csv', encoding = 'cp949')
 
 import matplotlib.pyplot as plt
-plt.rc('font', family='Malgun Gothic')
+plt.rc('font', family = 'Malgun Gothic')
 
 # 2016년 1월부터 12월까지의 천연가스 생산량을 X에 저장한다.
 import numpy as np
 X = data.loc[0,'1월':'12월'].to_numpy()
 
 # 막대 그래프를 그린다.
-plt.bar(np.arange(1,13), X, color='lightcoral')
+plt.bar(np.arange(1, 13), X, color = 'lightcoral')
 
 # y축 눈금 단위를 지수단위가 아닌 float로 변경한다.
 TickY = plt.gca().get_yticks()
