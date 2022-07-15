@@ -1,7 +1,7 @@
 # 코드 7-16
 
 # arange 함수로 0부터 12까지의 숫자를 list로 만들어 LS 변수에 저장한다.
-LS = list(np.arange(0,13))
+LS = list(np.arange(0, 13))
 
 # iloc 함수로 data의 모든 행에 대해, 0부터 12까지 열 데이터를 추출하고 넘파이 배열로 바꾼 후 Bdata에 저장한다.
 Bdata = data.iloc[:,LS].to_numpy()
