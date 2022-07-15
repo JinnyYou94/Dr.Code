@@ -2,7 +2,7 @@
 
 # MNIST 데이터를 불러온다.
 import pandas as pd
-traindata = pd.read_csv('mnist_train.csv', encoding='cp949')
-testdata = pd.read_csv('mnist_test.csv', encoding='cp949')
+traindata = pd.read_csv('mnist_train.csv', encoding = 'cp949')
+testdata = pd.read_csv('mnist_test.csv', encoding = 'cp949')
 
 print(traindata.head())
