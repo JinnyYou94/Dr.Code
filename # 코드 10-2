@@ -1,5 +1,5 @@
 # 코드 10-2
 
 model = keras.Sequential()
-model.add(keras.layers.Dense(50, activation='활성화 함수', input_shape=(784,)))
-model.add(keras.layers.Dense(10, activation='활성화 함수'))
+model.add(keras.layers.Dense(50, activation = '활성화 함수', input_shape = (784,)))
+model.add(keras.layers.Dense(10, activation = '활성화 함수'))
