@@ -2,4 +2,4 @@
 
 from sklearn.model_selection import train_test_split
 
-traindata, testdata, traindatatarget, testdatatarget = train_test_split(data, target, stratify=target, random_State=42)
+traindata, testdata, traindatatarget, testdatatarget = train_test_split(data, target, stratify = target, random_State = 42)
