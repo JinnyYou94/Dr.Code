@@ -7,8 +7,8 @@ import tensorflow as tf
 a = tf.Variable([[0,2,4], [6,8,10]])
 
 # reduce_sum 함수와 reduce_mean 함수를 이용해 원소들의 합과 평균값을 y1, y2에 저장한다.
-y1 = tf.reduce_sum(a,0)
-y2 = tf.reduce_mean(a,1)
+y1 = tf.reduce_sum(a, 0)
+y2 = tf.reduce_mean(a, 1)
 
 # y1, y2의 값을 출력한다.
 print (y1)
