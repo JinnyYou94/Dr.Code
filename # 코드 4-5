@@ -8,7 +8,7 @@ a = tf.Variable([[1,2,3], [2,3,4], [3,4,5], [4,5,6]])
 b = tf.Variable([0,1,2])
 
 # add 함수로 a와 b 배열을 더해서 add에 저장한다.
-add = tf.add(a,b)
+add = tf.add(a, b)
 
 # add 값을 출력한다.
 print(add)
