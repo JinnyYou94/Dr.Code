@@ -6,10 +6,10 @@ b = [1, 2, 3, 4]
 c = [1.0, 2.0, 3.0, 4.0]
 
 # a와 a의 type을 출력한다.
-print (a, type(a))
+print(a, type(a))
 
 # b의 0번째 인덱스를 출력한다.
-print (b[0])
+print(b[0])
 
 # c의 마지막 인덱스를 출력한다.
-print (c[-1])
+print(c[-1])
