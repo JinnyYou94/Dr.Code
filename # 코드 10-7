@@ -4,14 +4,14 @@ from tensorflow import keras
 
 # Sequential model에 Dense 층을 추가한다.
 model = keras.Sequential()
-model.add(keras.layers.Dense(50, activation='relu', input_shape=(784,)))
-model.add(keras.layers.Dense(30, activation='relu'))
-model.add(keras.layers.Dense(30, activation='relu'))
-model.add(keras.layers.Dense(10, activation='softmax'))
+model.add(keras.layers.Dense(50, activation = 'relu', input_shape = (784,)))
+model.add(keras.layers.Dense(30, activation = 'relu'))
+model.add(keras.layers.Dense(30, activation = 'relu'))
+model.add(keras.layers.Dense(10, activation = 'softmax'))
 
 # model 객체를 compile 한다.
-model.compile(loss='sparse_categorical_crossentropy', metrics='accuracy')
+model.compile(loss = 'sparse_categorical_crossentropy', metrics = 'accuracy')
 
-model.fit(MtrainS, MtrainStarget, epochs=5)
+model.fit(MtrainS, MtrainStarget, epochs = 5)
 
 model.evaluate(MtrainSV, MtrainSVtarget)
