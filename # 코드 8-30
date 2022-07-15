@@ -2,21 +2,21 @@
 
 # CSV 파일 불러와서 data에 저장하기
 import pandas as pd
-data = pd.read_csv('HousingData.csv', encoding='cp949')
+data = pd.read_csv('HousingData.csv', encoding = 'cp949')
 
 # 누락값 처리하기
 data = data.interpolate()
 
 # target 데이터 설정하기
-Btarget=data['MEDV'].to_numpy()
+Btarget = data['MEDV'].to_numpy()
 
 # 입력 데이터 설정하기
 LS = list(range(0, 13))
-Bdata=data.iloc[:, LS].to_numpy()
+Bdata = data.iloc[:, LS].to_numpy()
 
 # 훈련 세트와 테스트 세트 나누기
 from sklearn.model_selection import train_test_split
-Btrain, Btest, Btraintarget, Btesttarget = train_test_split(Bdata, Btarget, random_state=42)
+Btrain, Btest, Btraintarget, Btesttarget = train_test_split(Bdata, Btarget, random_state = 42)
 
 # Scale 맞추기
 from sklearn.preprocessing import StandardScaler
@@ -29,7 +29,7 @@ BtestS = ss.transform(Btest)
 from sklearn.linear_model import SGDRegressor
 
 # SGDRegressor를 1000에포크 반복하는 것으로 SGD에 저장한다.
-SGD = SGDRegressor(max_iter=1000, random_state=42)
+SGD = SGDRegressor(max_iter = 1000, random_state = 42)
 
 # 경사하강법으로 훈련한다.
 SGD.fit(BtrainS, Btraintarget)
