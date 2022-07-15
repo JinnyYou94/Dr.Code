@@ -1,5 +1,5 @@
 # 코드 5-32
 
 import matplotlib.pyplot as plt
-plt.hist([데이터], bins=가로축 구간개수)
+plt.hist([데이터], bins = 가로축 구간개수)
 plt.show( )
