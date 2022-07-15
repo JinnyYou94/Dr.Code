@@ -1,6 +1,6 @@
 # 코드 5-5
 
 # data_b에서 행의 인덱스 2를 삭제한 데이터를 data_b에 저장한다.
-data_b = data_b.drop([2], axis=0)
+data_b = data_b.drop([2], axis = 0)
 
 print(data_b.head())
