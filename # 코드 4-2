@@ -8,10 +8,10 @@ a = tf.constant([[1,2], [3,4]])
 b = tf.constant([[1,2], [3,4]])
 
 # a와 b의 행렬 곱셈을 y1에 저장한다.
-y1 = tf.matmul(a,b)
+y1 = tf.matmul(a, b)
 
 # a와 b의 element-wise 곱셈을 y2에 저장한다.
-y2 = tf.multiply(a,b)
+y2 = tf.multiply(a, b)
 
 print(y1)
 print(y2)
