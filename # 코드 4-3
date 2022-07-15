@@ -8,7 +8,7 @@ a = tf.constant([[1,2], [3,4]])
 b = tf.constant([[1,2], [3,4]])
 
 # divide 함수로 a와 b 행렬을 element-wise로 나누어 y에 저장한다.
-y = tf.divide(a,b)
+y = tf.divide(a, b)
 
 # y 값을 출력한다.
 print(y)
