@@ -1,9 +1,9 @@
 # 코드 6-2
 
 # axis = 0으로 구한 train_input 데이터의 평균과 표준편차 값을 변수 mean과 std에 저장한다.
-mean = np.mean(traindata, axis=0)
-std = np.std(traindata, axis=0)
+mean = np.mean(traindata, axis = 0)
+std = np.std(traindata, axis = 0)
 
 # mean과 std를 이용해서 구한 훈련세트, 테스트세트 표준점수를 변수 trainS, testS에 저장한다.
-trainS = (traindata-mean)/std
-testS = (testdata-mean)/std
+trainS = (traindata - mean) / std
+testS = (testdata - mean) / std
