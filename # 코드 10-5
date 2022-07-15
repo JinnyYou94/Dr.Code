@@ -4,16 +4,16 @@
 from tensorflow import keras
 
 # 층 dense를 설정한다.
-dense = keras.layers.Dense(10, activation='softmax', input_shape=(784, ))
+dense = keras.layers.Dense(10, activation = 'softmax', input_shape = (784, ))
 
 # dense를 Sequential에 넣어 model 객체에 저장한다.
 model = keras.Sequential(dense)
 
 # model 객체를 compile 한다.
-model.compile(loss='sparse_categorical_crossentropy', metrics='accuracy')
+model.compile(loss = 'sparse_categorical_crossentropy', metrics = 'accuracy')
 
 # 모델을 훈련한다.
-model.fit(MtrainS, MtrainStarget, epochs=5)
+model.fit(MtrainS, MtrainStarget, epochs = 5)
 
 # 모델을 평가한다.
 model.evaluate(MtrainSV, MtrainSVtarget)
